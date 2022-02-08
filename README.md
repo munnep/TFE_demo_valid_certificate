@@ -1,6 +1,9 @@
 # TFE_demo_valid_certificate
 
-You will install a TFE latest version with valid certificates
+You will install a TFE latest version with valid certificates on a vagrant machine. 
+
+The valid certificates will be created with let's encrypt
+The DNS record will be created at Amazon route53
 
 # Diagram
 The TFE server installation will connect to the internet to download and install necessary files. 
