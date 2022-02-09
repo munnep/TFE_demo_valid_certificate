@@ -7,6 +7,7 @@ Vagrant.configure("2") do |config|
 
     config.vm.provision "shell", path: "vagrant_scripts/configure_tfe_settings.sh"
     config.vm.provision "shell", path: "vagrant_scripts/configure_replicated.sh"
+    config.vm.provision "shell", path: "vagrant_scripts/install_tfe.sh"
 
     config.vm.provider "virtualbox" do |v|
         v.memory = 4096
