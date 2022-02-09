@@ -17,10 +17,10 @@ When the user wants to connect to TFE it will connect to the internet and route5
 - [x] Vagrant box
 - [x] Generate valid TLS certificates with Let's encrypt
 - [x] Create Valid DNS record
+- [x] Create terraform settings.json file
 
 # To do  
 
-- [ ] Create terraform settings.json file
 - [ ] Create replicated.conf file
 - [ ] terraform installation script
 - [ ] First user automation

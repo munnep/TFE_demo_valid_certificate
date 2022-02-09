@@ -1,0 +1,11 @@
+{
+    "enc_password": {
+        "value": "Password#1"
+    },
+    "hostname": {
+        "value": "patrick-tfe.bg.hashicorp-success.com"
+    },
+    "installation_type": {
+        "value": "poc"
+    }
+}
