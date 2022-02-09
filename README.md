@@ -20,7 +20,6 @@ When the user wants to connect to TFE it will connect to the internet and route5
 - [x] Create terraform settings.json file
 - [x] Create replicated.conf file
 - [x] tfe installation script
+- [x] First user automation
 
 # To do  
-
-- [ ] First user automation
