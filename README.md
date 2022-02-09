@@ -18,9 +18,9 @@ When the user wants to connect to TFE it will connect to the internet and route5
 - [x] Generate valid TLS certificates with Let's encrypt
 - [x] Create Valid DNS record
 - [x] Create terraform settings.json file
+- [x] Create replicated.conf file
 
 # To do  
 
-- [ ] Create replicated.conf file
 - [ ] terraform installation script
 - [ ] First user automation
