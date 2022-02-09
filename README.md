@@ -8,7 +8,7 @@ This repository is based on the official HashiCorp documentation. [See documenta
 # Diagram
 The TFE server installation will connect to the internet to download and install necessary files. 
 
-When the user wants to connect to TFE it will connect to the internet and route53 tp translate the DNS name to an ip address. Then it will connect to the TFE server which has a valid certificate for the DNS name and show a secure webpage. 
+When the user wants to connect to TFE it will connect to the internet and route53 to translate the DNS name to an ip address. Then it will connect to the TFE server which has a valid certificate for the DNS name and show a secure webpage. 
 
 ![](diagram/tfe_self_signed_certificate.png)
 
@@ -16,11 +16,11 @@ This repo uses Vagrant to create a virtual machine.
 
 Vagrant virtual machine:
 - ubuntu virtual machine starts
-- TLS/SSL certificates should be created and stored under ```/vagrant/certificates```
+- TLS/SSL certificates should be created and stored under ```certificates/```
 - TFE settings file can be found here ```config/tfe_settings.json```
 - Replicated configuration file can be found here ```config/replicated.conf```
 - TFE installation script will be downloaded and executed
-- the first admin user will be created within TFE to use with settings created under ```config/create_tfe_user.json```
+- the first admin user will be created within TFE to use with settings from ```config/create_tfe_user.json```
 
 For a manual installation of TFE follow [this documentation](manual/README.md) 
 
@@ -37,7 +37,7 @@ Virtualbox [See documentation](https://www.virtualbox.org/wiki/Downloads)
 - Make sure you have valid certificates and store these under ```certificates/``` in the format
     - privkey.pem
     - fullchain.pem
-- a dns record pointing to ```192.168.56.33```
+- a dns record pointing to ```192.168.56.33``` this repository used dns name ```patrick-tfe.bg.hashicorp-success.com```
 
 
 See manual [Create certificates](create_certificate/README.md)
@@ -54,7 +54,7 @@ git clone https://github.com/munnep/TFE_demo_valid_certificate.git
 cd TFE_demo_valid_certificate
 ```
 - save the license file as ```config/license.rli```
-- save the certicates files under ```certificates/```
+- save the certificate files under ```certificates/```
     - privkey.pem
     - fullchain.pem
 - Start a virtual machine with Vagrant (duration 10 minutes)
@@ -81,7 +81,7 @@ vagrant up
 user: admin
 password: Password#1
 ```
-- Stop the vagrant machine for later startup and use
+- Halt the vagrant machine for later startup and use
 ```
 vagrant halt
 ```
